@@ -9,4 +9,38 @@
 .text-warning-emphasis{
     background-color: #F8C700;
 }
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+}
 
+label {
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #fffb14;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #28752b;
+    }
+.cursive{
+    font-family: cursive;
+}

@@ -1,11 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 @import "variables.scss";
 
 @import "_main.scss";
+
 @import "_footer.scss";
 
 @import "responsive.scss";
@@ -16,6 +12,7 @@ body {
     background-color: $color-fondo;
     color: $color-texto;
     font-family: Arial, sans-serif;
+    padding: 100%;
 }
 
 .boton404 {
@@ -28,3 +25,75 @@ body {
     font-size:1.5rem;
     cursor: pointer;
 }
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #fffb14;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #28752b;
+    }
+.cursive{
+    font-family: cursive;
+}
+
+//////////////* GRID *///////////7777
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: 
+    "title title img img"
+    "map   map   img img"
+    "map   map   CTA CTA"
+    ;
+
+}
+
+.grid_container h2{
+    grid-area: title;
+}
+
+.grid_container iframe{
+    grid-area: map;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0px 6px 12px -1px rgba(255, 133, 218, 0.75);
+}
+
+.grid_container img{
+    grid-area: img;
+    width: 80%;
+    margin: auto;
+    border: 40px solid white;
+    box-shadow: 0px 6px 12px -1px rgba(255, 133, 218, 0.75);
+    transition: .3s ease;
+}
+.grid_container img:hover{
+    transform: scale(0.98);
+    }
